@@ -1,0 +1,70 @@
+:root{
+    --color-primary: #ffffff;
+    --color-primary-button : #e9e9e9;
+    --color-secondary-button : #d1cdcd;
+    --color-font: #000000;
+    --color-false: #ff8484;
+    --color-true: #83f27d;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primary);
+}
+
+
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-content: center;
+    width: 40rem;
+    /* border: 1px solid black; */
+}
+.header-container{
+    text-align: start;
+}
+.question-screen{
+    border: 1px solid red;
+    width: inherit;
+    height: 6rem;
+    margin-bottom: 3rem;
+}
+
+.screen{
+    font-size: 2rem;
+    color: red;
+}
+.button-container{
+    width: inherit;
+    /* border: 1px solid yellow; */
+}
+
+.button-container button{
+    display: block;
+    width: inherit;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+button{
+    background-color: var(--color-primary-button);
+}
+.button-container button:first-child{
+    margin-bottom: 0.1rem;
+}
+.button-container button:nth-child(3){
+    background-color: var(--color-secondary-button);
+    margin-top: 0.2rem;
+}
+
+.correct{
+    background-color: var(--color-true);
+}
+
+.incorrect{
+    background-color: var(--color-false);
+}
